@@ -54,9 +54,9 @@ body {
     justify-content: center;
     align-items: center;
     bottom: 0;
-    left: 5px;
-    right: 5px;
-    max-width: 600px;
+    left: 10px;
+    right: 10px;
+    max-width: 620px;
     margin: 0 auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -64,6 +64,11 @@ body {
     background-color: rgba(255, 255, 255, .6);
     backdrop-filter: blur(20px);
     box-shadow: 0 -10px 10px rgba(0, 0, 0, .5);
+}
+.player .track-title {transition: all .2s;}
+.player.idle .track-title {
+    font-style: italic;
+    opacity: .5;
 }
 
 .search-wrapper {
@@ -74,7 +79,7 @@ body {
     top: 10px;
     left: 10px;
     right: 10px;
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, .6);
@@ -96,4 +101,6 @@ body {
 }
 .search-wrapper #search::placeholder {
     font-style: italic;
+    color: inherit;
+    opacity: .5;
 }
