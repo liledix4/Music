@@ -73,9 +73,6 @@ body {
 
 .search-wrapper {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top: 10px;
     left: 10px;
     right: 10px;
@@ -86,6 +83,12 @@ body {
     backdrop-filter: blur(20px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
     overflow: hidden;
+}
+.search-wrapper > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: text;
 }
 .search-wrapper .search-icon {
     margin-left: 20px;
